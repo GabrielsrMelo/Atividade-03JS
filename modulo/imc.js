@@ -4,3 +4,8 @@
  * Autor: Gabriel Sousa        
  * Versão: 1.0
 ****************************************************************/
+
+function calcularImc(){
+
+    
+}
