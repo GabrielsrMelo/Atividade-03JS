@@ -13,7 +13,7 @@ const entradaDeDados = readline.createInterface({
     output: process.stdout
 })
 
-function obterDados(dados1, dados2) {
+function obterDadosImc(dados1, dados2) {
 
     console.log('---------------------- CALCULADORA DE IMC ----------------------')
 
@@ -28,12 +28,14 @@ function obterDados(dados1, dados2) {
 
             if (isNaN(peso) || isNaN(altura)) {
                 console.log('ERRO: Digite apenas números!')
-                obterDados
+                obterDadosImc
+            }else if(peso == '' || altura == ''){
+                console.log('Erro: Preencer todos os campos acima!')
+                obterDadosImc
             }
-
         })
     })
 }
 module.exports={
-    obterDados
+    obterDadosImc
 }
