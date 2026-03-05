@@ -25,10 +25,11 @@ function validarDadosMedia(dados1, dados2, dados3, dados4, dados5, dados6, dados
     }else if((sexo1 !== 'F' &&  sexo1 !== 'M' ) || (sexo2 !== 'F' && sexo2 !== 'M')){
         console.log('Erro: Digite apenas M (masculino) ou F (feminino) no campo de sexo. ')
     }else{
-        
+     return true
+     
     }
 
-    return obterDados()
+ 
 
 }
 

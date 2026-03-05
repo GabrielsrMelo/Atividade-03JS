@@ -38,6 +38,7 @@ function calcularMedia(valor1, valor2, valor3, valor4){
             }else{
                 return statusAluno = 'Reprovado no exame'
             }
+            
         })
 
     }else if(media >= 70){
@@ -47,7 +48,7 @@ function calcularMedia(valor1, valor2, valor3, valor4){
         return false
     }
 
-    
+    console.log(statusAluno)
 }
 module.exports={
     calcularMedia
