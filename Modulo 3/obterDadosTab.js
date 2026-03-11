@@ -22,6 +22,9 @@ function obterDados(){
 
                     let tratamentos = require('./tratarDados')
                     let validar = tratamentos.validarDadosTabuada(tabuadaInicial, tabuadaFinal, numInicial, numFinal)
+
+                    let calculoTab = require('./calculo')
+                    let validar2 = calculoTab.solicitarTabuada(tabuadaInicial, tabuadaFinal, numInicial, numFinal)
                 })
             })
         })
@@ -29,3 +32,4 @@ function obterDados(){
 
 
 }
+obterDados()
